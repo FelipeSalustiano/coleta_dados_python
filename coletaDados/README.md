@@ -16,3 +16,6 @@ Da biblioteca "bs4" importamos a classe BeaultifulSoup que facilita a análise e
 -  **requests.get('link do site')** faz uma requisição HTTP de tipo GET para URL fornecida, ou seja, acessa uma página web 
 
 - **response** é a variavel que vai armazenar a resposta da requisição
+
+### Criador
+Felipe Salustiano Moreira
