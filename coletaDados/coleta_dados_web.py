@@ -44,3 +44,9 @@ extracao = BeautifulSoup(requisicao.text, 'html.parser')
 #         print('Parágrafo: \n', titulo)
 
 # -=-=-= Exibir tags Aninhada -=-=-=
+for titulo in extracao.find_all('h2'):
+    print('\n Titulo: ', titulo.text.strip())
+    for link in titulo.find_next_siblings('p'):
+        for a in link.find_all('a', href=True):
+            print('Texto link: ', a.text.strip(), '| URL:', a["href"])
+            

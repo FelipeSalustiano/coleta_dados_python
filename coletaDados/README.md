@@ -1,21 +1,21 @@
-# Explicações sobre o arquivo coleta_dados_basico
+# Explicações sobre o pacote coletaDados
 
-## Importações
-- import requests
-
-
+## Importações e Bibliotecas utilizadas
+#### ***import requests***
 Biblioteca utilizada para enviar requisições HTTP, para acessar páginas web 
 
-- from bs4 import BeaultifulSoup
-
+#### ***from bs4 import BeaultifulSoup***
 Da biblioteca "bs4" importamos a classe BeaultifulSoup que facilita a análise e a extração de dados de páginas HTML ou XML
 
-## Fazendo a requisição 
-### response = requests.get('link do site')
+#### ***import pandas***
+Utiliza a biblioteca Pandas para achar tabela em uma url 
 
--  **requests.get('link do site')** faz uma requisição HTTP de tipo GET para URL fornecida, ou seja, acessa uma página web 
+## O que cada arquivo coleta_dados faz?
+### coleta_dados_basica
+Nesse arquivo peguei infromações de uma URL, usei ferramentas para analisar o HTML dessa URL e também usei a biblioteca Pandas para achar tabelas na URL 
 
-- **response** é a variavel que vai armazenar a resposta da requisição
+### coleta_dados_web
+Nesse arquivo, além de reforçar o aprendizado sobre fazer requisições de URL's, também encontrei e manipulei títulos, parágrafos e links no HTML do site requisitado 
 
-### Criador
-Felipe Salustiano Moreira
+### coleta_dados_api
+Nesse aquivo fiz uma API. Criei funções para enviar um arquivo para um site que faz upload desse arquivo, uma foi com API KEY (chave de acesso) que é uma forma mais segura para enviar o documento. Também criei uma função para baixar esse arquivo que foi enviado.
